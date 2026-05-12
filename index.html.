@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fehr Exterior Services | Pressure Washing in Schuylkill County, PA</title>
+  <meta name="description" content="Fehr Exterior Services provides pressure washing, gutter cleaning, and house washing throughout Schuylkill County, Pennsylvania." />
+  <meta name="theme-color" content="#07131d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#07131d;
+      --bg2:#0b1722;
+      --card:#0d1f2e;
+      --text:#f5f7fb;
+      --muted:#b8c6d6;
+      --accent:#38bdf8;
+      --accent2:#7CFC6A;
+      --line:rgba(255,255,255,.08);
+      --shadow:0 22px 50px rgba(0,0,0,.28);
+      --radius:24px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(56,189,248,.12), transparent 22%),
+        radial-gradient(circle at top right, rgba(124,252,106,.10), transparent 18%),
+        linear-gradient(180deg, #06111a 0%, #0b1722 45%, #0a141d 100%);
+      color:var(--text);
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px,92%);margin:0 auto}
+
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(6,17,26,.86);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding:14px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:800;
+      letter-spacing:.4px;
+      line-height:1.1;
+    }
+
+    .brand img{
+      width:54px;
+      height:54px;
+      object-fit:contain;
+      border-radius:10px;
+      background:#fff;
+      padding:4px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-weight:600;
+      font-size:.95rem;
+    }
+
+    .nav-links a:hover{color:#fff}
+
+    .hero{
+      padding:54px 0 28px;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      padding:8px 14px;
+      border:1px solid rgba(56,189,248,.25);
+      border-radius:999px;
+      color:#a7e7ff;
+      background:rgba(56,189,248,.08);
+      font-size:.9rem;
+      font-weight:700;
+    }
+
+    h1{
+      font-size:clamp(2.4rem,5vw,4.9rem);
+      line-height:1.02;
+      margin:16px 0 14px;
+      letter-spacing:-.02em;
+    }
+
+    .lead{
+      font-size:1.08rem;
+      line-height:1.75;
+      color:var(--muted);
+      max-width:60ch;
+    }
+
+    .cta{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:28px;
+    }
+
+    .btn{
+      padding:14px 20px;
+      border-radius:14px;
+      font-weight:800;
+      border:1px solid transparent;
+      transition:.2s ease;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .btn.primary{
+      background:linear-gradient(135deg,var(--accent),#1d4ed8);
+      color:#fff;
+      box-shadow:0 10px 24px rgba(56,189,248,.25);
+    }
+
+    .btn.secondary{
+      background:transparent;
+      border-color:rgba(255,255,255,.16);
+      color:var(--text);
+    }
+
+    .btn:hover{transform:translateY(-1px)}
+
+    .hero-card{
+      background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+
+    .hero-card img{
+      width:100%;
+      border-radius:18px;
+      background:#fff;
+      padding:8px;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:18px;
+    }
+
+    .stat{
+      background:rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      text-align:center;
+    }
+
+    .stat strong{
+      display:block;
+      font-size:1.15rem;
+      margin-bottom:5px;
+    }
+
+    .stat span{color:var(--muted);font-size:.95rem}
+
+    section{padding:34px 0}
+
+    .section-title{
+      font-size:1.9rem;
+      margin:0 0 10px;
+      letter-spacing:-.01em;
+    }
+
+    .section-sub{
+      color:var(--muted);
+      margin:0 0 22px;
+      line-height:1.7;
+      max-width:70ch;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+      box-shadow:0 14px 30px rgba(0,0,0,.16);
+    }
+
+    .card h3{margin:0 0 10px;font-size:1.15rem}
+    .card p, .card li{
+      color:var(--muted);
+      line-height:1.75;
+    }
+
+    .list{
+      padding-left:18px;
+      margin:0;
+    }
+
+    .area{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .pill{
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(124,252,106,.1);
+      border:1px solid rgba(124,252,106,.18);
+      color:#dfffce;
+      font-weight:700;
+    }
+
+    .contact{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      align-items:start;
+    }
+
+    .contact p{
+      color:var(--muted);
+      line-height:1.75;
+    }
+
+    .contact strong{color:var(--text)}
+
+    form{
+      display:grid;
+      gap:12px;
+    }
+
+    input,textarea{
+      width:100%;
+      padding:14px 16px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background:#08121b;
+      color:var(--text);
+      font:inherit;
+      outline:none;
+    }
+
+    input:focus,textarea:focus{
+      border-color:rgba(56,189,248,.55);
+      box-shadow:0 0 0 3px rgba(56,189,248,.12);
+    }
+
+    textarea{
+      min-height:150px;
+      resize:vertical;
+    }
+
+    footer{
+      padding:24px 0 38px;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      margin-top:18px;
+      font-size:.95rem;
+    }
+
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    @media (max-width:900px){
+      .hero-grid, .grid-3, .contact{grid-template-columns:1fr}
+      .nav-inner{flex-direction:column;align-items:flex-start}
+      .stats{grid-template-columns:1fr}
+      h1{font-size:clamp(2.2rem,10vw,4rem)}
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="9A97630F-413B-496D-844F-F7D91FBA71A0.jpeg" alt="Fehr Exterior Services logo">
+        <div>Fehr Exterior Services</div>
+      </div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#service-area">Service Area</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Pressure Washing • Gutter Cleaning • House Washing</span>
+        <h1>Clean Exteriors That Make Your Property Stand Out.</h1>
+        <p class="lead">
+          Fehr Exterior Services provides reliable exterior cleaning for homes across Schuylkill County, Pennsylvania.
+          From driveway pressure washing to safe house washing and thorough gutter cleaning, we help restore curb appeal
+          and protect your property.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Request a Free Quote</a>
+          <a class="btn secondary" href="tel:5706246674">Call Now</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>Local</strong>
+            <span>Schuylkill County</span>
+          </div>
+          <div class="stat">
+            <strong>Reliable</strong>
+            <span>Fast communication</span>
+          </div>
+          <div class="stat">
+            <strong>Quality</strong>
+            <span>Detail-focused work</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="9A97630F-413B-496D-844F-F7D91FBA71A0.jpeg" alt="Fehr Exterior Services logo large">
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="section-sub">
+        A simple service menu helps visitors understand what you do and makes it easier to request the right job.
+      </p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Pressure Washing</h3>
+          <p>Driveways, sidewalks, patios, decks, walkways, and other hard surfaces cleaned to remove dirt, algae, and stains.</p>
+        </div>
+        <div class="card">
+          <h3>Gutter Cleaning</h3>
+          <p>Clear out leaves and debris so gutters can drain properly and help protect your home from water damage.</p>
+        </div>
+        <div class="card">
+          <h3>House Washing</h3>
+          <p>Gentle exterior washing for siding that improves appearance without causing damage to the surface.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container grid-3">
+      <div class="card" style="grid-column:span 2;">
+        <h2 class="section-title">About Fehr Exterior Services</h2>
+        <p class="section-sub">
+          We are a local exterior cleaning business focused on honest service, clean results, and dependable communication.
+          Our goal is to make it easy for homeowners to keep their property looking its best.
+        </p>
+        <p class="section-sub" style="margin-bottom:0;">
+          This site is designed for lead generation with clear calls to action, visible service details, and a simple contact path.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Why choose us</h3>
+        <ul class="list">
+          <li>Local Schuylkill County service.</li>
+          <li>Professional exterior cleaning.</li>
+          <li>Easy quote requests.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="service-area">
+    <div class="container">
+      <h2 class="section-title">Service Area</h2>
+      <p class="section-sub">
+        Proudly serving Schuylkill County, Pennsylvania, and nearby communities.
+      </p>
+      <div class="area">
+        <span class="pill">Schuylkill County</span>
+        <span class="pill">Pottsville</span>
+        <span class="pill">Schuylkill Haven</span>
+        <span class="pill">Tamaqua</span>
+        <span class="pill">Mahanoy City</span>
+        <span class="pill">Saint Clair</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <div class="card">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">
+          Reach out for a free quote and tell us what you need cleaned.
+        </p>
+        <p><strong>Phone:</strong> <a href="tel:5706246674">570-624-6674</a></p>
+        <p><strong>Email:</strong> <a href="mailto:fehrexteriorservices@gmail.com">fehrexteriorservices@gmail.com</a></p>
+        <p><strong>Location:</strong> Schuylkill County, PA</p>
+      </div>
+
+      <div class="card">
+        <h3>Request a Quote</h3>
+        <form>
+          <input type="text" name="name" placeholder="Full Name" />
+          <input type="tel" name="phone" placeholder="Phone Number" />
+          <input type="email" name="email" placeholder="Email Address" />
+          <textarea name="message" placeholder="Tell us what you need cleaned..."></textarea>
+          <button class="btn primary" type="button">Send Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 Fehr Exterior Services.</div>
+      <div>Pressure washing, gutter cleaning, and house washing in Schuylkill County, PA.</div>
+    </div>
+  </footer>
+</body>
+</html>
